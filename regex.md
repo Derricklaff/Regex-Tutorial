@@ -39,6 +39,8 @@ Quantifiers indicate number of characters or expressions to match. The quantifie
 
 ? matches the preceding item character 0 or 1 times. The regular expression will match a string that either begins with # or not. For example /ou?r/ matches both "colour" and "color".
 
+As for {n}, "n" is a positive integer and it matches exactly "n" occurrences of the preceding item. In the Matching a Hex Value regular expression, the {6} and {3} are quantifiers. THe numbers inside specify  the number of characters that will be needed to match the preceding character class [a-f0-9]. For example, /g{2}/ will not match the "g's" in 'Dog' but, will match 'Dogg'.
+
 ### OR Operator
 
 ### Character Classes
